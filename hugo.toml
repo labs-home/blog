@@ -74,7 +74,7 @@ enableEmoji = true
 	[params.home]
 		[params.home.profile]
 			enable = true
-			avatarURL = "/images/Profile-Picture.png"
+			avatarURL = "Profile-Picture.png"
 			title = "Homelab"
 			subtitle = "Building and breaking things for fun!"
 			typeit = true
