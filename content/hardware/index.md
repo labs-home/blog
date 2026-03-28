@@ -2,7 +2,7 @@
 title = 'Hardware'
 +++
 
-![Server Rack](/images/Rack.jpeg)
+![Server Rack](Rack.jpeg)
 
 ## Inventory (Top-Bottom)
 - [StarTech.com 4-Post 25U Open Frame Server Rack](https://www.startech.com/en-gb/server-management/4postrack25)
