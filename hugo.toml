@@ -1,0 +1,112 @@
+baseURL = "https://homelab.jakefogden.com"
+title = "Homelab"
+theme = "LoveIt"
+languageCode = "en"
+defaultContentLanguage = "en"
+hasCJKLanguage = false
+
+enableRobotsTXT = true
+enableGitInfo = false
+enableEmoji = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[pagination]
+	pagerSize = 10
+
+[menu]
+  [[menu.main]]
+    identifier = "hardware"
+    name = "Hardware"
+    url = "/hardware/"
+    weight = 1
+  [[menu.main]]
+    identifier = "software"
+    name = "Software"
+    url = "/software/"
+    weight = 1
+	[[menu.main]]
+		identifier = "posts"
+		name = "Posts"
+		url = "/posts/"
+		weight = 2
+	[[menu.main]]
+		identifier = "tags"
+		name = "Tags"
+		url = "/tags/"
+		weight = 3
+	[[menu.main]]
+		identifier = "categories"
+		name = "Categories"
+		url = "/categories/"
+		weight = 4
+
+[taxonomies]
+	category = "categories"
+	tag = "tags"
+
+[outputs]
+	home = ["HTML", "RSS", "JSON"]
+
+[params]
+	defaultTheme = "dark"
+	dateFormat = "01-02-2006"
+	title = "Homelab"
+	description = "Notes, experiments, and guides for my homelab."
+
+	[params.author]
+		name = "Jake Fogden"
+		email = "jake@jakefogden.com"
+		link = ""
+
+	[params.header]
+		desktopMode = "fixed"
+		mobileMode = "auto"
+		[params.header.title]
+			name = "Homelab"
+			typeit = false
+
+	[params.footer]
+		enable = false
+
+	[params.home]
+		[params.home.profile]
+			enable = true
+			avatarURL = "/images/Profile-Picture.png"
+			title = "Homelab"
+			subtitle = "Building and breaking things for fun!"
+			typeit = true
+			social = true
+		[params.home.posts]
+			enable = false
+			paginate = 6
+
+	[params.social]
+    LinkedIn = "jake-l-fogden/"
+		GitHub = "labs-home"
+		Email = "jake@jakefogden.com"
+		RSS = false
+
+	[params.search]
+		enable = true
+		type = "fuse"
+		contentLength = 4000
+		maxResultLength = 10
+		snippetLength = 30
+		highlightTag = "em"
+
+	[params.page]
+		linkToMarkdown = true
+		rssFullText = false
+		[params.page.toc]
+			enable = true
+			keepStatic = false
+			auto = true
+		[params.page.code]
+			copy = true
+			maxShownLines = 50
+
+  [params.page.share]
+        enable = false
